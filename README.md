@@ -1,2 +1,2 @@
-# projeto-consultorio-dentario
- Projeto de pagina web para consultorio dentario ficticio.
+# Projeto consultorio dentário
+ Projeto de pagina web para consultorio dentario fictício.
