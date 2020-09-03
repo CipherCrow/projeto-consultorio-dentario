@@ -40,5 +40,68 @@ a{text-decoration: none;}
 	color: #b4b4b4;
 }
 
+						/*Mosaico*/
 
+section#mosaico{
+
+}
+.mosaico-single{
+	float: left;
+	width: calc(100% / 6);
+}
+.img-mosaico{
+	width: 100%;
+	padding-top: 100%;
+	background-color: #ccc;
+	border: 5px solid white;
+}
+
+#servicos > .container{
+	display: flex;
+	align-items: center;
+	max-width: 800px;
+	position: relative;
+	top: -40px;
+}
+.box-servico{
+	text-align: center;
+	padding: 0 2%;
+}
+#servicos > .container > .box-servico:nth-of-type(1){
+	width: 30%;
+	padding: 30px 2%;
+	background-color: #576975;
+}
+#servicos > .container > .box-servico:nth-of-type(2){
+	width: 40%;
+	padding: 60px 2%;
+	background-color: #688293;
+}
+#servicos > .container > .box-servico:nth-of-type(3){
+	width: 30%;
+	padding: 30px 2%;
+	background-color: #576975;
+}
+.box-servico h2{
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.box-servico p{
+	color: white;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.box-servico i{
+	font-size: 20px;
+	color: white;
+}
+
+				
+						/*exemplo*/
+						/*exemplo*/
+						/*exemplo*/
+						/*exemplo*/
 						/*exemplo*/
