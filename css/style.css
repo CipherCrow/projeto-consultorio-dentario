@@ -14,7 +14,9 @@ html,body{
 }
 a{text-decoration: none;}
 .clear{clear: both;}
-
+.mobile{display: none;}
+.w40{width: 40%;}
+.w60{width: 60%;}
 						/*Header*/
 #cabecalho{
 	padding: 10px 0;
@@ -99,9 +101,108 @@ section#mosaico{
 	color: white;
 }
 
-				
+						/*Perfil*/
+#perfil > .container{
+	max-width: 800px;
+}
+#perfil .perfil-wraper2{
+	padding-top: 60%;
+	position: relative;
+}
+
+#perfil .perfil-wraper{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;	
+}
+
+.perfil-wraper > .img-perfil{
+	height: 100%;
+	background-image: url('../images/img_perfil.png');
+	background-size: 100% 100%;
+}
+.perfil-wraper > .texto-perfil{
+	padding: 0 30px;
+}
+.perfil-wraper > .texto-perfil h2{
+	color: #698293;
+	font-size: 18px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.perfil-wraper > .texto-perfil p{
+	color: #4b4b4b;
+	font-size: 14px;
+}
+
 						/*exemplo*/
 						/*exemplo*/
 						/*exemplo*/
 						/*exemplo*/
-						/*exemplo*/
+						/*Responsivo*/
+
+@media screen and (max-width: 768px){
+
+	#servicos > .container{
+		flex-direction: column;
+		top: 0;
+	}
+	.container > .box-servico{
+		max-width: 400px;
+	}
+	#servicos > .container > .box-servico:nth-of-type(1){
+		width: 85%;
+		padding: 30px 2%;
+	}
+	#servicos > .container > .box-servico:nth-of-type(2){
+		width: 94%;
+		max-width: 450px;
+		padding: 40px 2%;
+	}
+	#servicos > .container > .box-servico:nth-of-type(3){
+		width: 85%;
+		padding: 30px 2%;
+	}
+
+	#perfil .perfil-wraper{
+		/*position: absolute;
+		left: 0;
+		top: 0;*/
+		display: inline-block;
+		text-align: center;
+		padding: 10px 0;
+		/*flex-direction: column;
+		width: 100%;
+		height: 100%;	*/
+	}
+	.perfil-wraper > .img-perfil{
+		width: 50%;
+		padding-top: 70%;
+		display: inline-block;
+		height: auto;
+	}
+	.perfil-wraper > .texto-perfil{
+		display: inline-block;
+		text-align: justify;
+		width: 100%;
+	}
+	.perfil-wraper > .texto-perfil h2{
+		text-align: center;
+	}
+}	/*768*/	
+
+@media screen and (max-width: 425px){
+	.perfil-wraper > .img-perfil{
+		width: 80%;
+		padding-top: 100%;
+		display: inline-block;
+		height: auto;
+	}
+	.header-logo img{
+		width: 200px;
+	}
+}
