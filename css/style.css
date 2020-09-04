@@ -17,7 +17,7 @@ a{text-decoration: none;}
 .mobile{display: none;}
 .w40{width: 40%;}
 .w60{width: 60%;}
-.w33{width: 32%;}
+.w33{width: 33%;}
 						/*Header*/
 #cabecalho{
 	padding: 10px 0;
@@ -170,18 +170,57 @@ section#mosaico{
 }
 
 						/*Videos*/
-
+section#videos{
+	padding: 40px 0;
+	text-align: center;
+}
 section#videos .box-video{
 	float: left;
+	display: inline-block;
 	padding-top: calc(33.3% * 0.6);
-	background-color: green;
+	border: 5px solid white;
+	position: relative;
+}
+section#videos iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height:100%;
 }						
-						/*exemplo*/
+						/*Tratamentos*/
+
+#tratamentos > .container > h2{
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #698293;
+	padding: 10px 0;
+}
+.trio-tratamento{
+	float: left;
+}
+.single-tratamento{
+	padding: 15px;
+}
+.single-tratamento h2{
+	font-size: 18px;
+	color: #737373;
+	text-align: center;
+}
+.single-tratamento p{
+	padding: 10px 0;
+	font-size: 13px;
+	color: #b4b4b4;
+}
+
+
 						/*exemplo*/
 						/*exemplo*/
 						/*Responsivo*/
 
 @media screen and (max-width: 768px){
+	.w33{width:100%;}
 	.desktop{
 		display: none;
 	}
@@ -234,6 +273,18 @@ section#videos .box-video{
 	.perfil-wraper > .texto-perfil h2{
 		text-align: center;
 	}
+	section#videos .box-video{
+		width: 70%;
+		padding-top: calc(70% * 0.6);
+		float: none;
+	}
+	section#videos iframe{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height:100%;
+	}
 }	/*768*/	
 
 @media screen and (max-width: 425px){
@@ -245,5 +296,9 @@ section#videos .box-video{
 	}
 	.header-logo img{
 		width: 200px;
+	}
+	section#videos .box-video{
+		width: 100%;
+		padding-top: calc(100% * 0.6);
 	}
 } /*425*/
