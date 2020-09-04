@@ -210,7 +210,10 @@ section#videos iframe{
 	height:100%;
 }						
 						/*Tratamentos*/
-
+#tratamentos{
+	padding: 30px 0;
+	background-color: #f7f7f7;
+}
 #tratamentos > .container > h2{
 	text-align: center;
 	font-size: 18px;
@@ -235,9 +238,48 @@ section#videos iframe{
 	color: #b4b4b4;
 }
 
+						/*Depoimentos*/
 
-						/*exemplo*/
-						/*exemplo*/
+#depoimentos > .container{
+	padding: 40px 0;
+	max-width: 400px;
+}
+#depoimentos > .container > h2{
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #698293;
+	padding: 20px 0;
+}
+.depoimento-single{
+	text-align: center;
+	width: 100%;
+}
+.depoimento-single quote{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+.depoimento-single .pessoa-depoimento{
+	padding: 20px 2%;
+}
+.pessoa-depoimento img{
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+}
+.pessoa-depoimento span{
+	font-size: 13px;
+	color: #b4b4b4;
+	position: relative;
+	top: 6px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+						/*Sobre*/
+						/*Contato*/
+						/*Footer*/
 						/*Responsivo*/
 
 @media screen and (max-width: 768px){
