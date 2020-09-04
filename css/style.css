@@ -86,6 +86,27 @@ section#mosaico{
 	background-color: #ccc;
 	border: 5px solid white;
 }
+.img1{
+	background-image: url('../images/painel1.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+}
+.img2{
+	background-image: url('../images/painel2.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+}
+.img3{
+	background-image: url('../images/painel3.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+}
+.img4{
+	background-image: url('../images/painel4.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+}
+
 
 #servicos > .container{
 	display: flex;
