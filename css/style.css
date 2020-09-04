@@ -17,6 +17,7 @@ a{text-decoration: none;}
 .mobile{display: none;}
 .w40{width: 40%;}
 .w60{width: 60%;}
+.w33{width: 32%;}
 						/*Header*/
 #cabecalho{
 	padding: 10px 0;
@@ -170,7 +171,11 @@ section#mosaico{
 
 						/*Videos*/
 
-						
+section#videos .box-video{
+	float: left;
+	padding-top: calc(33.3% * 0.6);
+	background-color: green;
+}						
 						/*exemplo*/
 						/*exemplo*/
 						/*exemplo*/
