@@ -15,9 +15,11 @@ html,body{
 a{text-decoration: none;}
 .clear{clear: both;}
 .mobile{display: none;}
-.w40{width: 40%;}
-.w60{width: 60%;}
 .w33{width: 33%;}
+.w40{width: 40%;}
+.w50{width: 50%;}
+.w60{width: 60%;}
+.w100{width: 100%;}
 						/*Header*/
 #cabecalho{
 	padding: 10px 0;
@@ -307,6 +309,66 @@ section#videos iframe{
 	background-color: #576975;
 }
 						/*Contato*/
+#contato{
+	padding: 40px 2%;
+	background-color: #F7F7F7;
+}
+#contato >.container > h2{
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #698293;
+	padding: 20px 0;
+}
+#contato  form{
+	width: 100%;
+	max-width: 550px; 
+	margin: 25px auto;
+	text-align: center;
+}
+.form-wraper{
+	margin: 10px 0;
+	float: left;
+	padding: 0 10px;
+	text-align: left;
+}
+.form-wraper span{
+	font-size: 16px;
+	color: #b4b4b4;
+}
+
+.form-wraper input{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	border: 1px solid #dadada;	
+	margin-top: 10px;
+}
+.form-wraper textarea{
+	margin: 10px 0;
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	resize: vertical;
+	border: 1px solid #dadada;	
+}
+#contato input[type=submit] {
+	width: 35%;
+	height: 40px;
+	border: none;
+	background-color: #688293;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+}
+/*.form-wraper input[type=email],
+.form-wraper input[type=tel]{
+
+}*/
+
+
+
 						/*Footer*/
 						/*Responsivo*/
 @media screen and (max-width: 1024px){
@@ -395,6 +457,9 @@ section#videos iframe{
 }	/*768*/	
 
 @media screen and (max-width: 425px){
+	.w50{
+		width: 100%;
+	}
 	.perfil-wraper > .img-perfil{
 		width: 80%;
 		padding-top: 100%;
