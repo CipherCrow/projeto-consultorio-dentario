@@ -362,14 +362,29 @@ section#videos iframe{
 	cursor: pointer;
 	font-size: 18px;
 }
-/*.form-wraper input[type=email],
-.form-wraper input[type=tel]{
-
-}*/
-
-
 
 						/*Footer*/
+
+footer{
+	background-color: #688293;
+	padding: 30px 0;
+	text-align: center;
+	color: white;
+}
+footer .bloco-footer{
+	float: left;
+	margin-bottom: 10px;
+}	
+.bloco-footer h2{
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: lighter;
+}
+.bloco-footer p{
+	font-size: 13px;
+	margin-bottom: 5px;
+}				
+
 						/*Responsivo*/
 @media screen and (max-width: 1024px){
 	.single-social-img{
