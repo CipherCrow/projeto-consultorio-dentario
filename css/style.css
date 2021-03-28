@@ -17,7 +17,6 @@ html{
 	margin: 0 auto;
 }
 a{text-decoration: none;}
-.clear{clear: both;}
 .mobile{display: none;}
 .w33{width: 33%;}
 .w40{width: 40%;}
@@ -79,11 +78,13 @@ a{text-decoration: none;}
 
 						/*Mosaico*/
 
-section#mosaico{
-
+.wraper-mosaico{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 .mosaico-single{
-	float: left;
 	width: calc(100% / 6);
 }
 .img-mosaico{
@@ -201,14 +202,19 @@ section#videos{
 	padding: 4rem 0;
 	text-align: center;
 }
-section#videos .box-video{
-	float: left;
+#videos .container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+#videos .box-video{
 	display: inline-block;
 	padding-top: calc(33.3% * 0.6);
 	border: .5rem solid white;
 	position: relative;
 }
-section#videos iframe{
+#videos iframe{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -220,15 +226,20 @@ section#videos iframe{
 	padding: 3rem 0;
 	background-color: #f7f7f7;
 }
+#tratamentos .container{
+	display: flex;
+	flex-wrap: wrap;
+}
 #tratamentos > .container > h2{
 	text-align: center;
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	color: #698293;
 	padding: 1rem 0;
+	width: 100%;
 }
 .trio-tratamento{
-	float: left;
+	margin: 1rem 0;
 }
 .single-tratamento{
 	padding: 1.5rem;
@@ -302,9 +313,10 @@ section#videos iframe{
 }
 .mosaico-social{
 	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 }
 .single-social-img{
-	float: left;
 	width: calc(100% / 9);
 	padding-top: calc(100% / 9);
 	border: .5rem solid white;
@@ -330,10 +342,13 @@ section#videos iframe{
 	margin: 2.5rem auto;
 	text-align: center;
 	font-size: 1.6rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 .form-wraper{
 	margin: 1rem 0;
-	float: left;
 	padding: 0 1rem;
 	text-align: left;
 }
@@ -376,8 +391,12 @@ footer{
 	text-align: center;
 	color: white;
 }
+footer .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 footer .bloco-footer{
-	float: left;
 	margin-bottom: 1rem;
 }	
 .bloco-footer h2{
@@ -458,7 +477,6 @@ footer .bloco-footer{
 	section#videos .box-video{
 		width: 70%;
 		padding-top: calc(70% * 0.6);
-		float: none;
 	}
 	section#videos iframe{
 		position: absolute;
