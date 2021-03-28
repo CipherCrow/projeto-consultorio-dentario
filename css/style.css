@@ -23,6 +23,65 @@ a{text-decoration: none;}
 .w50{width: 50%;}
 .w60{width: 60%;}
 .w100{width: 100%;}
+
+				/*preloader*/
+.preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+	transition: .4s;
+}
+.spinner{
+	font-size: 5rem;
+	color: white;
+	width: 8rem;
+	height: 8rem;
+	border: .5rem solid #576975;
+	border-radius: 50%;
+	background-color: #688293;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: spinarak 1.2s infinite;
+}
+@keyframes spinarak{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+#link-topo{
+	position: fixed;
+	right: 2rem;
+	bottom: 3rem;
+	width: 3rem;
+	height: 3rem;
+	background-color: #576975;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+	color: white;
+	box-shadow: 0 .3rem .3rem rgba(0,0,0,.8);
+}	
+#link-topo i{
+	font-size: 2rem;
+	line-height: 2rem;
+}	
+#link-topo:hover{
+	opacity: .9;
+	color: black;
+}	
 						/*Header*/
 #cabecalho{
 	padding: 1rem 0;
@@ -34,6 +93,7 @@ a{text-decoration: none;}
 }
 .header-logo img{
 	width: 23rem;
+	margin-left: 2rem;
 }
 .nav-header > ul{
 	list-style: none;
@@ -47,19 +107,40 @@ a{text-decoration: none;}
 .nav-header ul a{
 	color: #b4b4b4;
 }
+.desktop ul a{
+	padding-bottom: .5rem;
+	transition: .3s;
+}
+.desktop li:hover a{
+	border-bottom: .4rem solid #576975;
+	color: rgba(0,0,0,.9);
+}
+.desktop >ul >li{
+	text-shadow: 0 .1rem .1rem rgba(0,0,0,.3);	
+}
 .mobile i{
 	font-size: 2.5rem;
 	color: #b4b4b6;
-	position: relative;
+	margin-right: 2rem;
+	cursor: pointer;
+	transition: .3s;
+}
+.mobile i:hover{
+	color: #576975;
 }
 .mobile > ul{
-	display: none;
 	z-index: 999;
 	width: 100%;
 	position: absolute;
-	top: 5rem;
+	top: -20rem;
 	left: 0;
 	text-align: center;
+	opacity: 0;
+	transition: 1s;
+}
+.open ul{
+	opacity: 1;
+	top: 6rem;
 }
 .mobile > ul > li{
 	background-color: white;
@@ -67,13 +148,20 @@ a{text-decoration: none;}
 	margin: .2rem 0;
 	width: 80%;
 	padding: .5rem 0;
+	box-shadow: 0 .2rem .2rem rgba(0,0,0,.9);
+	font-size: 1.8rem;
 }
-.mobile > ul > li:hover,.mobile > ul > li > a:hover{
-	background-color: #ddd;
-	transition: 0.7s;
+.mobile > ul > li:hover{
+	background-color: #688293;
+	color: white;
+	border: .2rem solid #576975;
+	transition: 0.3s;
+}
+.mobile > ul > li:hover a{
+	color: white;
 }
 .mobile > ul > li > a{
-	padding: 0 25%;
+	display: block;
 }
 
 						/*Mosaico*/
@@ -83,6 +171,18 @@ a{text-decoration: none;}
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	opacity: 0;
+	z-index: 1;
+	animation: showw 1s forwards;
+}
+@keyframes showw{
+	0%{
+		transform: translateY(-40rem);		
+	}
+	100%{
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 .mosaico-single{
 	width: calc(100% / 6);
@@ -114,7 +214,6 @@ a{text-decoration: none;}
 	background-position: center;
 }
 
-
 #servicos > .container{
 	display: flex;
 	align-items: center;
@@ -125,21 +224,39 @@ a{text-decoration: none;}
 .box-servico{
 	text-align: center;
 	padding: 0 2%;
+	box-shadow: 0 .2rem .3rem rgba(0,0,0,.7);	
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.5);
 }
-#servicos > .container > .box-servico:nth-of-type(1){
+@keyframes show{
+	0%{
+		transform: translateY(30rem);
+	}
+	100%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+.box-servico:nth-of-type(1){
 	width: 30%;
 	padding: 3rem 2%;
 	background-color: #576975;
+	opacity: 0;
+	animation: show 1s .5s forwards;
 }
-#servicos > .container > .box-servico:nth-of-type(2){
+.box-servico:nth-of-type(2){
 	width: 40%;
 	padding: 6rem 2%;
 	background-color: #688293;
+	z-index: 2;
+	opacity: 0;
+	animation: show 1s 1s forwards;
 }
-#servicos > .container > .box-servico:nth-of-type(3){
+.box-servico:nth-of-type(3){
 	width: 30%;
 	padding: 3rem 2%;
 	background-color: #576975;
+	opacity: 0;
+	animation: show 1s .5s forwards;
 }
 .box-servico h2{
 	color: white;
@@ -190,11 +307,13 @@ a{text-decoration: none;}
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
 	text-transform: uppercase;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.1);
 }
 .perfil-wraper > .texto-perfil p{
 	color: #4b4b4b;
 	font-size: 1.4rem;
 	margin-bottom: 1rem;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.1);	
 }
 
 						/*Videos*/
@@ -237,6 +356,7 @@ section#videos{
 	color: #698293;
 	padding: 1rem 0;
 	width: 100%;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.1);	
 }
 .trio-tratamento{
 	margin: 1rem 0;
@@ -248,11 +368,14 @@ section#videos{
 	font-size: 1.8rem;
 	color: #737373;
 	text-align: center;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.1);	
 }
 .single-tratamento p{
 	padding: 1rem 0;
 	font-size: 1.3rem;
 	color: #b4b4b4;
+	text-align: center;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.1);	
 }
 
 						/*Depoimentos*/
@@ -267,6 +390,7 @@ section#videos{
 	text-transform: uppercase;
 	color: #698293;
 	padding: 2rem 0;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.1);	
 }
 .depoimento-single{
 	text-align: center;
@@ -275,6 +399,7 @@ section#videos{
 .depoimento-single quote{
 	font-size: 1.5rem;
 	color: #b4b4b4;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.1);	
 }
 .depoimento-single .pessoa-depoimento{
 	padding: 2rem 2%;
@@ -291,6 +416,7 @@ section#videos{
 	top: .6rem;
 	display: inline-block;
 	vertical-align: top;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.1);	
 }
 
 
@@ -302,6 +428,7 @@ section#videos{
 	width: 100%;
 	padding: 4rem 0;
 	color: white;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.4);	
 }
 .chamada i{
 	font-size: 3rem;
@@ -335,6 +462,7 @@ section#videos{
 	text-transform: uppercase;
 	color: #698293;
 	padding: 2rem 0;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.1);		
 }
 #contato  form{
 	width: 100%;
@@ -381,6 +509,10 @@ section#videos{
 	color: white;
 	cursor: pointer;
 	font-size: 1.8rem;
+	box-shadow: 0 .2rem .2rem rgba(0,0,0,.4);	
+}
+#contato input[type=submit]:hover {
+	opacity: .9;
 }
 
 						/*Footer*/
@@ -395,6 +527,7 @@ footer .container{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	text-shadow: 0 .2rem .2rem rgba(0,0,0,.4);		
 }
 footer .bloco-footer{
 	margin-bottom: 1rem;
@@ -495,6 +628,10 @@ footer .bloco-footer{
 }	/*768*/	
 
 @media screen and (max-width: 42.5rem){
+	.wraper-mosaico{
+		animation: none;
+		opacity: 1;
+	}
 	.w50{
 		width: 100%;
 	}
