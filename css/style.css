@@ -9,9 +9,10 @@ html,body{
 }
 html{
 	scroll-behavior: smooth;
+	font-size: 10px;
 }
 .container{
-	max-width: 1280px;
+	max-width: 128rem;
 	padding: 0 2%;
 	margin: 0 auto;
 }
@@ -25,7 +26,7 @@ a{text-decoration: none;}
 .w100{width: 100%;}
 						/*Header*/
 #cabecalho{
-	padding: 10px 0;
+	padding: 1rem 0;
 }
 #cabecalho > .container{
 	display: flex;
@@ -33,22 +34,22 @@ a{text-decoration: none;}
 	align-items: center;
 }
 .header-logo img{
-	width: 230px;
+	width: 23rem;
 }
 .nav-header > ul{
 	list-style: none;
 }
 .nav-header > ul > li{
 	display: inline-block;
-	padding: 0 20px;
-	font-size: 14px;
+	padding: 0 2rem;
+	font-size: 1.4rem;
 	text-transform: uppercase;
 }
 .nav-header ul a{
 	color: #b4b4b4;
 }
 .mobile i{
-	font-size: 25px;
+	font-size: 2.5rem;
 	color: #b4b4b6;
 	position: relative;
 }
@@ -57,16 +58,16 @@ a{text-decoration: none;}
 	z-index: 999;
 	width: 100%;
 	position: absolute;
-	top: 50px;
+	top: 5rem;
 	left: 0;
 	text-align: center;
 }
 .mobile > ul > li{
 	background-color: white;
-	border: 2px solid #ccc;
-	margin: 2px 0;
+	border: .2rem solid #ccc;
+	margin: .2rem 0;
 	width: 80%;
-	padding: 5px 0;
+	padding: .5rem 0;
 }
 .mobile > ul > li:hover,.mobile > ul > li > a:hover{
 	background-color: #ddd;
@@ -89,7 +90,7 @@ section#mosaico{
 	width: 100%;
 	padding-top: 100%;
 	background-color: #ccc;
-	border: 5px solid white;
+	border: .5rem solid white;
 }
 .img1{
 	background-image: url('../images/painel1.jpg');
@@ -116,9 +117,9 @@ section#mosaico{
 #servicos > .container{
 	display: flex;
 	align-items: center;
-	max-width: 800px;
+	max-width: 80rem;
 	position: relative;
-	top: -40px;
+	top: -4rem;
 }
 .box-servico{
 	text-align: center;
@@ -126,39 +127,39 @@ section#mosaico{
 }
 #servicos > .container > .box-servico:nth-of-type(1){
 	width: 30%;
-	padding: 30px 2%;
+	padding: 3rem 2%;
 	background-color: #576975;
 }
 #servicos > .container > .box-servico:nth-of-type(2){
 	width: 40%;
-	padding: 60px 2%;
+	padding: 6rem 2%;
 	background-color: #688293;
 }
 #servicos > .container > .box-servico:nth-of-type(3){
 	width: 30%;
-	padding: 30px 2%;
+	padding: 3rem 2%;
 	background-color: #576975;
 }
 .box-servico h2{
 	color: white;
-	font-size: 18px;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 	font-weight: normal;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 .box-servico p{
 	color: white;
-	font-size: 13px;
-	margin-bottom: 10px;
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
 }
 .box-servico i{
-	font-size: 20px;
+	font-size: 2rem;
 	color: white;
 }
 
 						/*Perfil*/
 #perfil > .container{
-	max-width: 800px;
+	max-width: 80rem;
 }
 #perfil .perfil-wraper2{
 	padding-top: 60%;
@@ -181,30 +182,30 @@ section#mosaico{
 	background-size: 100% 100%;
 }
 .perfil-wraper > .texto-perfil{
-	padding: 0 30px;
+	padding: 0 3rem;
 }
 .perfil-wraper > .texto-perfil h2{
 	color: #698293;
-	font-size: 18px;
-	margin-bottom: 10px;
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
 	text-transform: uppercase;
 }
 .perfil-wraper > .texto-perfil p{
 	color: #4b4b4b;
-	font-size: 14px;
-	margin-bottom: 10px;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
 }
 
 						/*Videos*/
 section#videos{
-	padding: 40px 0;
+	padding: 4rem 0;
 	text-align: center;
 }
 section#videos .box-video{
 	float: left;
 	display: inline-block;
 	padding-top: calc(33.3% * 0.6);
-	border: 5px solid white;
+	border: .5rem solid white;
 	position: relative;
 }
 section#videos iframe{
@@ -216,67 +217,67 @@ section#videos iframe{
 }						
 						/*Tratamentos*/
 #tratamentos{
-	padding: 30px 0;
+	padding: 3rem 0;
 	background-color: #f7f7f7;
 }
 #tratamentos > .container > h2{
 	text-align: center;
-	font-size: 18px;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 	color: #698293;
-	padding: 10px 0;
+	padding: 1rem 0;
 }
 .trio-tratamento{
 	float: left;
 }
 .single-tratamento{
-	padding: 15px;
+	padding: 1.5rem;
 }
 .single-tratamento h2{
-	font-size: 18px;
+	font-size: 1.8rem;
 	color: #737373;
 	text-align: center;
 }
 .single-tratamento p{
-	padding: 10px 0;
-	font-size: 13px;
+	padding: 1rem 0;
+	font-size: 1.3rem;
 	color: #b4b4b4;
 }
 
 						/*Depoimentos*/
 
 #depoimentos > .container{
-	padding: 40px 0;
-	max-width: 400px;
+	padding: 4rem 0;
+	max-width: 40rem;
 }
 #depoimentos > .container > h2{
 	text-align: center;
-	font-size: 18px;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 	color: #698293;
-	padding: 20px 0;
+	padding: 2rem 0;
 }
 .depoimento-single{
 	text-align: center;
 	width: 100%;
 }
 .depoimento-single quote{
-	font-size: 15px;
+	font-size: 1.5rem;
 	color: #b4b4b4;
 }
 .depoimento-single .pessoa-depoimento{
-	padding: 20px 2%;
+	padding: 2rem 2%;
 }
 .pessoa-depoimento img{
-	width: 32px;
-	height: 32px;
-	border-radius: 16px;
+	width: 3.2rem;
+	height: 3.2rem;
+	border-radius: 1.6rem;
 }
 .pessoa-depoimento span{
-	font-size: 13px;
+	font-size: 1.3rem;
 	color: #b4b4b4;
 	position: relative;
-	top: 6px;
+	top: .6rem;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -288,16 +289,16 @@ section#videos iframe{
 	text-align: center;
 	background-color: #98a5ae;
 	width: 100%;
-	padding: 40px 0;
+	padding: 4rem 0;
 	color: white;
 }
 .chamada i{
-	font-size: 30px;
-	padding: 10px 0;
+	font-size: 3rem;
+	padding: 1rem 0;
 	color: white;
 }
 .chamada p{
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 .mosaico-social{
 	width: 100%;
@@ -306,90 +307,91 @@ section#videos iframe{
 	float: left;
 	width: calc(100% / 9);
 	padding-top: calc(100% / 9);
-	border: 5px solid white;
+	border: .5rem solid white;
 }
 #sobre > div:nth-of-type(3){
 	background-color: #576975;
 }
 						/*Contato*/
 #contato{
-	padding: 40px 2%;
+	padding: 4rem 2%;
 	background-color: #F7F7F7;
 }
 #contato >.container > h2{
 	text-align: center;
-	font-size: 18px;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 	color: #698293;
-	padding: 20px 0;
+	padding: 2rem 0;
 }
 #contato  form{
 	width: 100%;
-	max-width: 550px; 
-	margin: 25px auto;
+	max-width: 55rem; 
+	margin: 2.5rem auto;
 	text-align: center;
+	font-size: 1.6rem;
 }
 .form-wraper{
-	margin: 10px 0;
+	margin: 1rem 0;
 	float: left;
-	padding: 0 10px;
+	padding: 0 1rem;
 	text-align: left;
 }
 .form-wraper span{
-	font-size: 16px;
+	font-size: 1.6rem;
 	color: #b4b4b4;
 }
 
 .form-wraper input{
 	width: 100%;
-	height: 35px;
-	line-height: 35px;
-	padding-left: 10px;
-	border: 1px solid #dadada;	
-	margin-top: 10px;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	padding-left: 1rem;
+	border: .1rem solid #dadada;	
+	margin-top: 1rem;
 }
 .form-wraper textarea{
-	margin: 10px 0;
+	margin: 1rem 0;
 	width: 100%;
-	height: 150px;
-	padding: 10px;
+	height: 15rem;
+	padding: 1rem;
 	resize: vertical;
-	border: 1px solid #dadada;	
+	border: .1rem solid #dadada;	
 }
 #contato input[type=submit] {
 	width: 35%;
-	height: 40px;
+	height: 4rem;
 	border: none;
 	background-color: #688293;
 	color: white;
 	cursor: pointer;
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 
 						/*Footer*/
 
 footer{
 	background-color: #688293;
-	padding: 30px 0;
+	padding: 3rem 0;
 	text-align: center;
 	color: white;
 }
 footer .bloco-footer{
 	float: left;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }	
 .bloco-footer h2{
-	margin-bottom: 10px;
-	font-size: 20px;
+	margin-bottom: 1rem;
+	font-size: 2rem;
 	font-weight: lighter;
 }
 .bloco-footer p{
-	font-size: 13px;
-	margin-bottom: 5px;
+	font-size: 1.3rem;
+	margin-bottom: .5rem;
 }				
 
 						/*Responsivo*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 102.4rem){
 	.single-social-img{
 		width: calc(100% / 6);
 		padding-top: calc(100% / 6);
@@ -399,7 +401,7 @@ footer .bloco-footer{
 	}
 
 } /*1024*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 76.8rem){
 	.w33{width:100%;}
 	.desktop{
 		display: none;
@@ -412,24 +414,24 @@ footer .bloco-footer{
 		top: 0;
 	}
 	.container > .box-servico{
-		max-width: 400px;
+		max-width: 40rem;
 	}
 	#servicos > .container > .box-servico:nth-of-type(1){
 		width: 85%;
-		padding: 30px 2%;
+		padding: 3rem 2%;
 	}
 	#servicos > .container > .box-servico:nth-of-type(2){
 		width: 94%;
-		max-width: 450px;
-		padding: 40px 2%;
+		max-width: 45rem;
+		padding: 4rem 2%;
 	}
 	#servicos > .container > .box-servico:nth-of-type(3){
 		width: 85%;
-		padding: 30px 2%;
+		padding: 3rem 2%;
 	}
 
 	#perfil .perfil-wraper2{
-		padding-top: 20px;
+		padding-top: 2rem;
 	}
 
 	#perfil .perfil-wraper{
@@ -437,7 +439,7 @@ footer .bloco-footer{
 		position: static;
 		display: inline-block;
 		text-align: center;
-		padding: 10px 0;
+		padding: 1rem 0;
 	}
 	.perfil-wraper > .img-perfil{
 		width: 50%;
@@ -474,7 +476,7 @@ footer .bloco-footer{
 	}
 }	/*768*/	
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 42.5rem){
 	.w50{
 		width: 100%;
 	}
@@ -485,7 +487,7 @@ footer .bloco-footer{
 		height: auto;
 	}
 	.header-logo img{
-		width: 200px;
+		width: 20rem;
 	}
 	section#videos .box-video{
 		width: 100%;
